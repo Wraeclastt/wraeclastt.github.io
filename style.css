@@ -1,0 +1,52 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+.w3-bar-item {
+    font-size: 25px;
+    color: rgb(54, 54, 54);
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/006e8d6a-6251-4d26-9545-e1d6b992124f/daqsqpg-3f3c2673-4b0a-47a9-a5b3-d2533abd51b3.jpg/v1/fill/w_1024,h_416,q_75,strp/mountain_pass_by_wraeclast_daqsqpg-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDE2IiwicGF0aCI6IlwvZlwvMDA2ZThkNmEtNjI1MS00ZDI2LTk1NDUtZTFkNmI5OTIxMjRmXC9kYXFzcXBnLTNmM2MyNjczLTRiMGEtNDdhOS1hNWIzLWQyNTMzYWJkNTFiMy5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.IK_QmN5twR_wHDkw_yN5VLGQZm03HA0XNoht5-4h68Y');
+  min-height: 75%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url('https://i.ibb.co/KG4C2b0/portfolio.jpg');
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://www.drivestream.com/wp-content/uploads/2018/08/contact-us-banner.jpg");
+  min-height: 400px;
+}
+
+.projecttitle {
+    font-weight: bold;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+    }
+}
